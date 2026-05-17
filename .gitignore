@@ -1,8 +1,1 @@
-DerivedData/
 build/
-*.xcworkspace/xcuserdata/
-*.xcodeproj/xcuserdata/
-*.xccheckout
-*.moved-aside
-*.xcuserstate
-.DS_Store
