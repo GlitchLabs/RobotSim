@@ -6,6 +6,7 @@ project(RobotSim VERSION 1.0
 
 #Creates a CMake build target named RobotSim from the listed source files,
 #then compiles and links them into the final executable also named RobotSim.
-add_executable(RobotSim src/main.cpp src/TwoDGrid.cpp)
+
+add_executable(RobotSim src/main.cpp src/TwoDGrid.cpp src/Robot.cpp)
 #This command is about header search paths not compiling headers
 target_include_directories(RobotSim PRIVATE include)

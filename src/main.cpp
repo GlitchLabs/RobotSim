@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include "TwoDGrid.hpp"
+#include "Robot.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -15,5 +16,8 @@ int main(int argc, const char * argv[]) {
     //grid.printGrid();
     grid.addObstacle(2, 2, 'S');
     grid.printGrid();
+    Robot robuddy(4,4);
+    robuddy.printCurrPos();
+
     return 0;
 }
