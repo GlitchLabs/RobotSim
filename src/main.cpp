@@ -14,10 +14,13 @@ int main(int argc, const char * argv[]) {
     std::cout << "RobotSim initialized\n";
     TwoDGrid grid(5, 5);
     //grid.printGrid();
-    grid.addObstacle(2, 2, 'S');
-    grid.printGrid();
+    Position pos{2,2};
+    grid.addObstacle( pos,'S');
+    
     Robot robuddy(4,4);
+    grid.addObstacle(robuddy.getPosition(), 'R');
     robuddy.printCurrPos();
+    grid.printGrid();
 
     return 0;
 }

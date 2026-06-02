@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include "Position.hpp"
 
 class TwoDGrid {
 public:
@@ -7,7 +8,7 @@ public:
     void printGrid() const;
     //add the start, obstacle or target to the 2D grid
     //The user should be able to ask for one of the known obstacles to be added.
-    void addObstacle(int row, int col, char obst);
+    void addObstacle(Position pos, char obst);
 private:
 enum class obstacles {
     Start,
