@@ -17,10 +17,23 @@ int main(int argc, const char * argv[]) {
     Position pos{2,2};
     grid.addObstacle( pos,'S');
     
-    Robot robuddy(4,4);
-    grid.addObstacle(robuddy.getPosition(), 'R');
-    robuddy.printCurrPos();
+    Robot roBuddy(2,2);
+    grid.addObstacle(roBuddy.getPosition(), 'R');
+    //robuddy.printCurrPos();
     grid.printGrid();
+    roBuddy.move(RIGHT,grid);
+    grid.printGrid();
+    //roBuddy.printCurrPos();
+    roBuddy.move(UP,grid);
+    grid.printGrid();
+    //roBuddy.printCurrPos();
+    roBuddy.move(LEFT,grid);
+    grid.printGrid();
+    //roBuddy.printCurrPos();
+    roBuddy.move(DOWN,grid);
+    grid.printGrid();
+
+
 
     return 0;
 }
